@@ -64,6 +64,14 @@
             Console.WriteLine(message);
             #endregion
             #endregion
+            #region String formatting
+            int xs = 50, ys = 90;
+            string Message1 = "The equation " + xs + " + " + ys + " = " + (xs + ys) + " which is our result";
+            Console.WriteLine(Message1);
+            string Message2 = string.Format("The equation {0} + {1} = {2} which is our result", xs, ys, xs + ys);
+            Console.WriteLine(Message2);
+            Console.WriteLine($"The equation {xs} + {ys} = {xs + ys} which is our result");
+            #endregion
         }
     }
 }
